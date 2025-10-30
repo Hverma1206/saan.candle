@@ -16,8 +16,6 @@ const Footer = () => {
               Handcrafted luxury candles that transform your space into a sanctuary of warmth and elegance.
             </p>
           </div>
-
-          {/* Quick Links */}
           <div>
             <h3 className="font-serif font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
