@@ -6,6 +6,13 @@ import rasmalai1 from "@/assets/rasmala-1.jpg";
 import laxmigamenesh1 from "@/assets/laxmi-ganesh/IMG_20250924_212659.jpg";
 import laxmigamenesh2 from "@/assets/laxmi-ganesh/IMG_20250924_212729.jpg";
 import laxmigamenesh3 from "@/assets/laxmi-ganesh/IMG_20250924_214559.jpg";
+import kaju1 from "@/assets/kaju-katli/IMG20250922134823.jpg"
+import kaju2 from "@/assets/kaju-katli/IMG20250922134946.jpg"
+import kaju3 from "@/assets/kaju-katli/IMG_20250922_232949.jpg"
+import kaju4 from "@/assets/kaju-katli/IMG_20250922_233116.jpg"
+import tulip1Pink from "@/assets/tulip-jar/IMG_20251006_080105.jpg"
+import tulip2Pink from "@/assets/tulip-jar/IMG_20251006_080105.jpg"
+
 
 // import candleLavender from "@/assets/candle-lavender.jpg";
 // import candleRose from "@/assets/candle-rose.jpg";
@@ -64,8 +71,8 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    name: "Festive Combo Pack",
-    price: 499,
+    name: "Laxmi Ganesh Pair Candles",
+    price: 599,
     image: laxmigamenesh1,
     images: [laxmigamenesh1, laxmigamenesh2, laxmigamenesh3],
     description: "Celebrate the festive season with our special combo pack featuring Laxmi and Ganesh themed candles.",
@@ -73,7 +80,31 @@ export const products: Product[] = [
       { quantity: 1, price: 499 },
       { quantity: 2, price: 950 },
     ],
-  }
+  },
+  {
+id: 6,
+name: "Kaju Katli Scented Candle Set",
+price: 109,
+image: kaju1,
+images: [kaju1, kaju2, kaju3, kaju4],
+description: "Experience the rich and nutty aroma of Kaju Katli with our exquisitely crafted scented candle set, perfect for adding a touch of elegance to any space.",
+pricing: [
+{ quantity: 4, price: 109 },
+{ quantity: 8, price: 194 },
+],
+  },
+  {
+    id: 7,
+    name: "Pink Tulip Jar Candle",
+    price: 299,
+    image: tulip1Pink,
+    images: [tulip1Pink, tulip2Pink],
+    description: "Brighten your space with the fresh and floral scent of pink tulips, beautifully encased in an elegant jar candle.",
+    pricing: [
+      { quantity: 1, price: 299 },
+    ],
+  },
+
   // {
   //   id: 4,
   //   name: "Sandalwood Serenity",
