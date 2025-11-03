@@ -3,18 +3,29 @@ import blueberry1 from "@/assets/blueberry-1.jpg";
 import urli1 from "@/assets/urli-1.jpg";
 import laddu1 from "@/assets/laddu-candle-1.jpg";
 import rasmalai1 from "@/assets/rasmala-1.jpg";
+import laxmigamenesh1 from "@/assets/laxmi-ganesh/IMG_20250924_212659.jpg";
+import laxmigamenesh2 from "@/assets/laxmi-ganesh/IMG_20250924_212729.jpg";
+import laxmigamenesh3 from "@/assets/laxmi-ganesh/IMG_20250924_214559.jpg";
+
 // import candleLavender from "@/assets/candle-lavender.jpg";
 // import candleRose from "@/assets/candle-rose.jpg";
 // import candleSandalwood from "@/assets/candle-sandalwood.jpg";
 // import candleOcean from "@/assets/candle-ocean.jpg";
 // import candleCinnamon from "@/assets/candle-cinnamon.jpg";
 
+export interface PricingTier {
+  quantity: number;
+  price: number;
+}
+
 export interface Product {
   id: number;
   name: string;
   price: number;
   image: string;
+  images?: string[];
   description: string;
+  pricing?: PricingTier[];
 }
 
 export const products: Product[] = [
@@ -39,6 +50,30 @@ export const products: Product[] = [
     image: laddu1,
     description: "Warm and sweet notes of traditional Indian laddu.",
   },
+  {
+    id: 4,
+    name: "Rasmalai",
+    price: 99,
+    image: rasmalai1,
+    description: "Delightful kesar aroma inspired by the classic Indian dessert Rasmalai.",
+    pricing: [
+      { quantity: 1, price: 99 },
+      { quantity: 2, price: 196 },
+      { quantity: 4, price: 389 },
+    ],
+  },
+  {
+    id: 5,
+    name: "Festive Combo Pack",
+    price: 499,
+    image: laxmigamenesh1,
+    images: [laxmigamenesh1, laxmigamenesh2, laxmigamenesh3],
+    description: "Celebrate the festive season with our special combo pack featuring Laxmi and Ganesh themed candles.",
+    pricing: [
+      { quantity: 1, price: 499 },
+      { quantity: 2, price: 950 },
+    ],
+  }
   // {
   //   id: 4,
   //   name: "Sandalwood Serenity",
