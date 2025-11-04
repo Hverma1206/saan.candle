@@ -13,15 +13,14 @@ import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
+
 const queryClient = new QueryClient();
 
 const App = () => (
-  
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-        <Analytics />
-
+      <Analytics />
       <CartProvider>
         <Toaster />
         <Sonner />
