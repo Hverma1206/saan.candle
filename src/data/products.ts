@@ -1,5 +1,6 @@
 // import candleVanilla from "@/assets/candle-vanilla.jpg";
-import blueberry1 from "@/assets/blueberry-1.jpg";
+import blueberry2 from "@/assets/blueberry/IMG_20250928_230443.jpg";
+import blueberry1 from "@/assets/blueberry/IMG_20250928_230605.jpg";
 import urli1 from "@/assets/urli-1.jpg";
 import laddu1 from "@/assets/laddu-candle-1.jpg";
 import rasmalai1 from "@/assets/rasmala-1.jpg";
@@ -41,6 +42,7 @@ export const products: Product[] = [
     name: "Blueberry Bliss",
     price: 249,
     image: blueberry1,
+    images: [blueberry1, blueberry2],
     description: "Warm blueberry with hints of vanilla",
   },
   {
