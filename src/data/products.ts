@@ -108,7 +108,7 @@ pricing: [
   },
 {id : 8,
   name : "Crystal' Jar Candle",
-    
+    price : 560,
 }
   // {
   //   id: 4,
