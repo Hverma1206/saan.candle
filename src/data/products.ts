@@ -106,7 +106,10 @@ pricing: [
       { quantity: 1, price: 299 },
     ],
   },
-
+{id : 8,
+  name : "Crystal' Jar Candle",
+    
+}
   // {
   //   id: 4,
   //   name: "Sandalwood Serenity",
