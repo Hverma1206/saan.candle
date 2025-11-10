@@ -108,8 +108,14 @@ pricing: [
   },
 {id : 8,
   name : "Crystal' Jar Candle",
-    price : 560,
-}
+     price: 299,
+    image: tulip1Pink,
+    images: [tulip1Pink, tulip2Pink],
+    description: "Brighten your space with the fresh and floral scent of pink tulips, beautifully encased in an elegant jar candle.",
+    pricing: [
+      { quantity: 1, price: 299 },
+    ],
+  },
   // {
   //   id: 4,
   //   name: "Sandalwood Serenity",
